@@ -1,0 +1,29 @@
+.zagolovok {
+	background-image: url(http://www.zastavki.com/pictures/originals/2015/Backgrounds_Just_a_light_blue_background_095356_.jpg);
+	background-repeat: repeat;
+	margin: 30px;
+	border: 10px solid black;
+	border-radius: 5px;
+	padding: 5%;
+	font-family: Tahoma;
+}
+
+/*.links img {
+	
+    margin-right: 10px;  Отступ справа 
+    margin-bottom: 10px;  Отступ снизу 
+}*/
+
+img {
+ 	display: block;
+	width: 150px;
+	}
+
+.images {
+	 margin-right: 10px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.knopki {
+	margin-left: 30px;
+}
