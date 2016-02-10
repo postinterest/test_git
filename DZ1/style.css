@@ -1,39 +1,42 @@
 body {
 	margin: 0;
-	background-image: url(200931776657564.png);
+	background-image: url(34.png);
 	background-size: repeat cover;
 }
 
 .bodyall {
-		/*height: 100%; */
- 		background-image: url(geometric-pattern-background-blue.png) ;
+		background-image: url(luxfon.com_6125.jpg) ;
  		background-repeat: 
  		width: 75%; 
  		font-family: Tahoma;
-		font-size: 15px;
-		/*margin: 15%;
-		margin-top: 5%;*/
+ 		color: white;
+		font-size: 19px;
 		margin: 0 15%;
 		padding: 5%;
 	}
-.77 {
-	display: block;
+img {
+	
+	-webkit-box-shadow: 13px 13px 50px -21px rgba(0,0,0,1);
+	-moz-box-shadow: 13px 13px 50px -21px rgba(0,0,0,1);
+	box-shadow: 13px 13px 50px -21px rgba(0,0,0,1);
+
 }
 
+.3435 {
+	text-align: center;
+}
 .main-picture {
 
 		text-align: center;
 
 	}
-	img {
-		-webkit-box-shadow: 13px 13px 50px -21px rgba(0,0,0,1);
-			-moz-box-shadow: 13px 13px 50px -21px rgba(0,0,0,1);
-			box-shadow: 13px 13px 50px -21px rgba(0,0,0,1);
-	}
+a {
+	display: block;
+}
 
-	p {
-		margin: 3px;
-	}
-	a {
-		display: block;
-	}
+.ssilki
+ {
+ 	margin-right: 30px; /* Отступ справа */
+    margin-bottom: 30px; /* Отступ снизу */
+}
+
