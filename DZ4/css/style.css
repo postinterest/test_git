@@ -1,0 +1,143 @@
+﻿body {
+	background-image: url(../img/back1.png);
+}
+
+/*общий див*/
+.container {
+	margin: auto;
+	background-color: white;
+	height: 100%;
+	width: 1000px;
+	margin-top: 38px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/*шапка со странами*/
+.main_info {
+	height: 175px;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	color: #128aa7;
+	font-family: tahoma;
+}
+
+.main_words {
+	padding-top: 100px;
+	padding-left: 100px;
+}
+.contacts {
+	float: right;
+	padding-top: 7px;
+	padding-right: 45px;
+	font: 11pt/14pt sans-serif;
+
+}
+.countries ul li {
+	display: inline-block;
+}
+.countries ul li a {
+	display: block;
+	font-size: 11px;
+	margin-right: 5px;
+	margin-left: 5px;
+	text-align: center;
+	;
+}
+.countries {
+	float: right;
+	padding-right: 15px
+}
+
+/*меню*/
+.main_pic {
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+	height: 237px;
+}
+
+.menu {
+	clear: both;
+	height: 30px;
+	background-image: url(../img/menu.png);
+	z-index: 5;
+	box-shadow: 0px 4px 4px 0px rgba(119,119,120,0.66);
+}
+
+.menu1 {
+	position: relative;
+	}
+
+.menu1 ul{
+	position: absolute;
+	display: none;
+}
+.menu ul li:hover ul {
+	display: block;
+}
+.menu1 li {
+	display: inline-block;
+	margin: 0 15px 0 15px;
+	padding: 5px 20px 0 15px;
+}
+
+.menu1 a {
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	font: 11pt tahoma bold;
+}
+
+
+/*основные колонки*/
+.columns {
+	clear: both;
+	width: 1000px;
+	height: 500px;
+}
+
+.info {
+	z-index: 3;
+	width: 300px;
+	height: 98%;
+	float: left;
+	background-color: #edeef0;
+	border-right: 1px solid #c7cacf;
+	text-align: auto;
+	padding: 10px 10px 0 10px;
+	font: 11pt/16pt tahoma;
+	color: #424c43;
+}
+.centr{
+	float: left;
+	width: 350px;
+	padding-left: 7px;
+	padding-top: 3%;
+}
+.news {
+	z-index: 2;
+	width: 300px;
+	height: 98%;
+	float: right;
+	background-color: #edeef0;
+	border-left: 1px solid #c7cacf;
+	text-align: auto;
+	padding: 10px 10px 0 10px;
+	font: 11pt/16pt tahoma;
+	color: #424c43;
+}
+
+.z1 {
+	font: bold 20px tahoma;
+	text-align: center;
+}
+.z2 {
+	font: bold 20px tahoma;
+	text-align: center;	
+}
+
+.insta_user img {
+	width: 250px;
+	height: 250px;
+	padding-left: 45px;
+}

@@ -54,7 +54,7 @@ body {
 
 }
 
-a:hover.main {
+a.main:hover {
 	background: #323232;
 	color: #c0c0c0;
 	height: 31px;
@@ -100,11 +100,11 @@ a:hover.main {
 /*content*/
 
 .mainpublic {
-	
+	float: right;
 	margin-top: 40px;
 }
 .mainpost {
-	float: right;
+	
 	border: 1px solid #c8c8c8;
 	display: block;
 	margin: auto;
