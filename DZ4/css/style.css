@@ -6,11 +6,16 @@
 .container {
 	margin: auto;
 	background-color: white;
-	height: 100%;
 	width: 1000px;
 	margin-top: 38px;
 	margin-bottom: 20px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+/*обнуление флоатов в общем диве*/	
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
 }
 
 /*шапка со странами*/
@@ -60,20 +65,17 @@
 	clear: both;
 	height: 30px;
 	background-image: url(../img/menu.png);
-	z-index: 5;
 	box-shadow: 0px 4px 4px 0px rgba(119,119,120,0.66);
-}
-
-.menu1 {
 	position: relative;
-	}
-
-.menu1 ul{
+}
+/*
+.menu1 li ul{
 	position: absolute;
 	display: none;
+	width: 60px;
 }
-.menu ul li:hover ul {
-	display: block;
+.menu1 li:hover ul {
+     display: block;
 }
 .menu1 li {
 	display: inline-block;
@@ -81,25 +83,69 @@
 	padding: 5px 20px 0 15px;
 }
 
-.menu1 a {
+.menu ul li a {
 	display: block;
 	text-decoration: none;
 	color: #ffffff;
-	font: 11pt tahoma bold;
+	font: 12pt tahoma bold;
+}
+*/
+
+.menu1 li {
+    float: left;
+    position: relative;
+}
+.menu1 li a {
+    display: block;
+    padding-left: -10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    margin-left: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: tahoma;
+}
+.menu1 li a:hover {
+    background-color: transparent;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    width: 155px;
+    top: 30px;
+    left: 20px;
+    background-color: #303030;
+    box-shadow: 0px 4px 4px 0px rgba(119,119,120,0.66);
+ 
+   
+}
+.submenu li {
+    display: block;
+    
+
+}
+.submenu li a {
+    display: block;
+    color: #ffffff;
+    background-color: #303030;
+    text-decoration: none;
+    font-family: tahoma;
+    
 }
 
+.menu1 li:hover .submenu {
+    display: block;
+}
 
 /*основные колонки*/
 .columns {
-	clear: both;
 	width: 1000px;
-	height: 500px;
+	overflow: hidden;
+	/*height: 500px;*/
 }
 
 .info {
-	z-index: 3;
-	width: 300px;
-	height: 98%;
+	width: 30%;
 	float: left;
 	background-color: #edeef0;
 	border-right: 1px solid #c7cacf;
@@ -107,17 +153,20 @@
 	padding: 10px 10px 0 10px;
 	font: 11pt/16pt tahoma;
 	color: #424c43;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;
 }
 .centr{
-	float: left;
-	width: 350px;
+	width: 33%;
+	margin: 0 auto;
 	padding-left: 7px;
-	padding-top: 3%;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;
+	
 }
 .news {
-	z-index: 2;
-	width: 300px;
-	height: 98%;
+	width: 30%;
+	height: 100%;
 	float: right;
 	background-color: #edeef0;
 	border-left: 1px solid #c7cacf;
@@ -125,6 +174,8 @@
 	padding: 10px 10px 0 10px;
 	font: 11pt/16pt tahoma;
 	color: #424c43;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;
 }
 
 .z1 {
@@ -138,6 +189,13 @@
 
 .insta_user img {
 	width: 250px;
-	height: 250px;
 	padding-left: 45px;
+}
+
+/*footer*/
+.footer{
+	color: #dee7ee;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 15px;
 }
