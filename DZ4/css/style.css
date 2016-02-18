@@ -68,73 +68,58 @@
 	box-shadow: 0px 4px 4px 0px rgba(119,119,120,0.66);
 	position: relative;
 }
-/*
-.menu1 li ul{
-	position: absolute;
-	display: none;
-	width: 60px;
-}
-.menu1 li:hover ul {
-     display: block;
-}
-.menu1 li {
+
+.menu1 > li {
 	display: inline-block;
-	margin: 0 15px 0 15px;
-	padding: 5px 20px 0 15px;
+    padding: 5px 35px 5px 15px;
+    margin-left: 10px;
 }
 
-.menu ul li a {
-	display: block;
+.menu1 a {
 	text-decoration: none;
 	color: #ffffff;
-	font: 12pt tahoma bold;
+	font: 11pt/15pt tahoma;
+	
 }
-*/
 
-.menu1 li {
-    float: left;
-    position: relative;
+.submenu a{
+	background-color: #343434;
+
 }
-.menu1 li a {
-    display: block;
-    padding-left: -10px;
-    padding-right: 10px;
-    padding-top: 6px;
-    margin-left: 25px;
-    color: #ffffff;
-    text-decoration: none;
-    font-family: tahoma;
-}
-.menu1 li a:hover {
-    background-color: transparent;
-}
+
 .submenu {
-    display: none;
-    position: absolute;
-    width: 155px;
-    top: 30px;
-    left: 20px;
-    background-color: #303030;
-    box-shadow: 0px 4px 4px 0px rgba(119,119,120,0.66);
- 
-   
-}
-.submenu li {
-    display: block;
-    
-
-}
-.submenu li a {
-    display: block;
-    color: #ffffff;
-    background-color: #303030;
-    text-decoration: none;
-    font-family: tahoma;
-    
+	display: none;
+	position: absolute;
+	width: 135px;
+	padding-left: 9px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	margin-left: -8px;
+	top: 29px;
+	box-shadow: 0px 4px 4px 0px rgba(119,119,120,0.66);
 }
 
-.menu1 li:hover .submenu {
-    display: block;
+.drop:hover .submenu {
+	display: block;
+	background-color: #343434;
+	z-index: 99;
+}
+
+.menu1 > a {
+	position: relative;
+}
+
+.tri:after {
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 7px solid white;
+	top: 11px;
+	left: 250px
+
 }
 
 /*основные колонки*/
