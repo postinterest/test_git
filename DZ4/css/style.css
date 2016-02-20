@@ -109,6 +109,9 @@
 	position: relative;
 }
 
+.drop {
+	position: relative;
+}
 .tri:after {
 	content: '';
 	position: absolute;
@@ -117,8 +120,9 @@
 	border-left: 3px solid transparent;
 	border-right: 3px solid transparent;
 	border-top: 7px solid white;
-	top: 11px;
-	left: 250px
+	top: 14px;
+	margin-left: 8px;
+	
 
 }
 
