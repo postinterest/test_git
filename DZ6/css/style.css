@@ -1,0 +1,69 @@
+body {
+	background-color: #ffffff;
+}
+
+.wrapper {
+	width: 910px;
+	height: 1310px;
+	max-width: 910px;
+	margin: 0 auto;
+}
+.header {
+	height: 332px;
+	max-height: 332px;
+	min-height: 332px;
+}
+
+/*верхняя навигация*/
+.circle {
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: linear-gradient(to bottom, rgba(12,51,87,1) 0%,rgba(31,103,134,1) 100%);
+	border-radius: 10px;
+	}
+.topmenu {
+	float: left;
+}
+.mainnavi {
+	max-height: 54px;
+	height: 40px;
+}
+
+.mainnavi a {
+	display: inline-block;
+}
+.mainnavi span {
+ 	display: inline-block;
+ }
+  .mainnavi form {
+  	display: inline-block;
+  }
+  .mainnavi input {
+  	display: inline-block;
+  }
+  .mainnavi img {
+  	display: inline-block
+  }
+form {
+	width: 266px;
+}
+.avtoriz {
+	max-width: 800px;
+}
+.navi {
+	float: right;
+	width: 60px;
+	border: 1px solid #c1c8cb;
+	border-radius: 10px;
+}
+/*конец верхней навигации*/
+ 
+ /*главное меню*/
+.menu ul li {
+	display: inline-block;
+}
+
+.menu ul li a {
+	text-decoration: none;
+}
