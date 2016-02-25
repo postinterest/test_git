@@ -2,11 +2,16 @@ body {
 	background-color: #ffffff;
 }
 
-.wrapper {
+.container {
 	width: 910px;
 	height: 1310px;
 	max-width: 910px;
 	margin: 0 auto;
+}
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
 }
 .header {
 	height: 332px;
@@ -48,6 +53,15 @@ body {
 form {
 	width: 266px;
 }
+.login-form-submit {
+    height: 13px;
+    width: 40px;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 11px;
+    text-align: center;
+    }
 .avtoriz {
 	max-width: 800px;
 }
@@ -60,10 +74,74 @@ form {
 /*конец верхней навигации*/
  
  /*главное меню*/
-.menu ul li {
+nav ul li {
 	display: inline-block;
 }
 
-.menu ul li a {
+nav ul li a {
 	text-decoration: none;
+}
+select {
+	width: 100px;
+}
+
+/*боковая колонка*/
+aside {
+	width: 195px;
+	float: left;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+
+.catalog {
+	font-size: 14px;
+}
+
+.catalog1 {
+	border: 1px solid #8b979c;
+	border-radius: 10px;
+}
+.listimg {
+	float: left;
+	width: 17px;
+	height: 18px;
+	background: linear-gradient(to bottom, rgba(12,51,87,1) 0%,rgba(31,103,134,1) 100%);
+	border-radius: 10px;
+	padding-left: 5px;
+    padding-top: 3px;
+}
+.scat {
+	clear: both;
+	border: 1px solid #8b979c;
+	border-radius: 10px;
+
+}
+.scatpic {
+	float: left;
+}
+
+.marker1 {
+	clear: both;
+}
+.sidebar {
+	width: 195px;
+	float: right;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+
+.form1 {
+	clear: both;
+}
+/*основной блок*/
+.mainblock {
+	width: 915px;
+	overflow: hidden;
+}
+
+main {
+	width: 525px;
+	margin: 0 auto;
+	padding-bottom: 20000px;
+    margin-bottom: -20000px;
 }

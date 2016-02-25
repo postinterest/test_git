@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="container clearfix">
 		<header>
 			<div class="mainnavi">	
 				<div class="navi">
@@ -24,24 +24,116 @@
 					<form action="#">
 					<input type="text" name="login" placeholder="логин" size="10">
 					<input type="password" name="pass" placeholder="пароль" size="10">
-					<input type="submit" value="вход |">
+					<button class="login-form-submit" name="submitAuth" value="Вход">Вход</button>
 					</form>
+					<span>|&nbsp;</span>
 					<a href="#">регистрация</a>
 					<a href="#">забыли пароль?</a>
 				</div>
 			</div>	
 			<div class="mainlogo"><img src="img/zazor.png" alt=""></div>
-			<div class="menu">
+			<nav>
 				<ul>
 					<li><a href="">О КОМПАНИИ</a></li>
 					<li><a href="">ОПЛАТА</a></li>
 					<li><a href="">ДОСТАВКА</a></li>
 					<li><a href="">СТАТЬИ</a></li>
 					<li><a href="">КОНТАКТЫ</a></li>
+					<li><img src="img/basket.png" alt="basket"></li>
+					<li>товаров:<output name=result>0</output></li>
+					<li>на сумму: <output name=resultgrn>0,00 грн.</output> </li>
 				</ul>
+			</nav>
+			<!--<div class="searchavto">
+				<form action="#" name="avto">
+					    Марка авто:<select name="auto" id="" size="1">
+						<option selected disabled=""></option>
+						<option value="bmw">BMW</option>
+						<option value="mercedes">MERCEDES</option>
+    					<option value="audi">AUDI</option>
+   						<option value="mazda">MAZDA</option>
+   						<option value="volkswagen">VOLKSWAGEN</option>
+					</select>
 
-			</div>
+					<p>Модель <p>автомобиля:<select name="model" id="" size="1">
+						<option selected disabled=""></option>
+						<option value="5">5 series</option>
+						<option value="golf">GOLF</option>
+    					<option value="allroad">ALLROAD</option>
+   						<option value="mazda">MAZDA 3</option>
+   						<option value="4matic">4 Matic</option>
+					</select></p>
+				</form>
+
+			</div>-->
 		</header>
+		<div class="mainblock">
+			<aside>
+				<div class="catalog1">
+					<div class="listimg"><img src="img/list.png" alt="list"></div><span class="catalog">КАТАЛОГ ПРОДУКЦИИ:</span>
+				</div>
+				<div class="scat">
+					<div class="scatpic"><img src="img/scat.png" alt="scat"></div><span class="scattext">ШИНЫ</span>	
+				</div>
+				<div class="marker1"><ul>
+					<li><img src="img/punkt.png" alt="marker">Наименование 1</li>
+					<li><img src="img/punkt.png" alt="marker">Наименование 2</li>
+					<li><img src="img/punkt.png" alt="marker">Наименование 3</li>
+					<li><img src="img/punkt.png" alt="marker">Наименование 4</li>
+				</ul></div>
+				<div class="scat">
+					<div class="scatpic"><img src="img/scat.png" alt="scat"></div><span class="scattext">ДИСКИ</span>	
+				</div>
+				<div class="marker1"><ul>
+					<li><img src="img/punkt.png" alt="marker">Наименование 1</li>
+					<li><img src="img/punkt.png" alt="marker">Наименование 2</li>
+					<li><img src="img/punkt.png" alt="marker">Наименование 3</li>
+					<li><img src="img/punkt.png" alt="marker">Наименование 4</li>
+				</ul></div>
+				<div class="scat">
+					<div class="scatpic"><img src="img/scat.png" alt="scat"></div><span class="scattext">БОЛТЫ</span>	
+				</div>
+				<div class="marker1"><ul>
+					<li><img src="img/punkt.png" alt="marker">Наименование 1</li>
+					<li><img src="img/punkt.png" alt="marker">Наименование 2</li>
+					<li><img src="img/punkt.png" alt="marker">Наименование 3</li>
+					<li><img src="img/punkt.png" alt="marker">Наименование 4</li>
+				</ul></div>
+				
+			</aside>
+			<div class="sidebar">
+				<div class="catalog1">
+					<div class="listimg"><img src="img/list.png" alt="list"></div><span class="catalog">КАТАЛОГ ПРОДУКЦИИ:</span>
+				</div>
+				<div class="scat">
+					<div class="scatpic"><img src="img/scat.png" alt="scat"></div><span class="scattext">ШИНЫ</span>	
+				</div>
+				<div class="form1">
+				<form action="#" name="scatform">
+					<input type="checkbox" class="checkbox" value="brandscat"> Бренд 1 <br>
+					<input type="checkbox" class="checkbox" value="brandscat"> Бренд 2 <br>
+					<input type="checkbox" class="checkbox" value="brandscat"> Бренд 3 <br>
+				</form>
+				</div>
+				<div class="scat">
+					<div class="scatpic"><img src="img/scat.png" alt="scat"></div><span class="scattext">ДИСКИ</span>	
+				</div>
+				<div class="form1">
+				<form action="#" name="scatform">
+					<input type="checkbox" class="checkbox" value=""> Бренд 1 <br>
+					<input type="checkbox" class="checkbox" value=""> Бренд 2 <br>
+					<input type="checkbox" class="checkbox" value=""> Бренд 3 <br>
+					<input type="submit" value="ВЫБРАТЬ">
+				</form>
+				</div>
+			</div>
+			<main>
+			
+			</main>
+		</div>
 	</div>
+	<footer>
+		
+	</footer>
 </body>
 </html>
