@@ -1,0 +1,29 @@
+.header {
+	height: 100px;
+	background-color: gray;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+}
+.sidebar {
+	position: absolute;
+	width: 300px;
+	background: yellow;
+	top: 0;
+	left: 0;
+}
+
+.content {
+	float: right;
+	margin-left: 300px;
+	background: green;
+}
+
+.footer {
+	clear: both;
+	height: 100px;
+	color: white;
+	background: black;
+}

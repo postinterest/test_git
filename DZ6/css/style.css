@@ -79,7 +79,7 @@ body {
 	float: left;
     margin-top: 22px;
     margin-left: 16px;
-    width: 494px;
+    width: 495px;
     background: linear-gradient(to bottom, rgba(31,103,135,1) 0%,rgba(19,70,106,1) 47%,rgba(12,51,87,1) 100%);
     height: 24px;
     border: 1px solid transparent;
@@ -88,11 +88,12 @@ body {
     box-shadow: 2px 3px 6px -3px rgba(10,16,48,1);
 }
 .img_man{
-	padding-left: 5px;
+    padding-left: 7px;
+    padding-bottom: 2px;
 }
 
 .form_input{
-	display: inline;
+	display: inline-block;
 	vertical-align: super;
 }
 .avtoriz span,
@@ -104,7 +105,7 @@ body {
 	font-size: 12px;
 }
 .white_link {
-	margin-left: -5px;
+	margin-left: -7px;
 }
 .gray_link {
 	color: #bfbfbf;
@@ -121,19 +122,22 @@ body {
   	display: inline-block;
 }
  
-form {
-	width: 284px;
+input {
+    width: 107px;
+    font-size: 12px;
+    font-family: 'lucida';
+    padding: 0px 0px 3px 5px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 1px;
+    margin-left: 1px;
+    margin-top: 2px;
+    height: 13px;
+}
+.form_input_div {
+	display: inline-block;
 }
 
-#user {
-	height: 10px;
-	width: 107px
-}
-#user_1 {
-	height: 10px;
-	width: 107px;
-	margin-left: 6px;
-}
 .login-form-submit {
     border: none;
     background: none;
@@ -170,14 +174,15 @@ nav ul li {
 }
 
 nav ul li img {
-	margin-left: 45px;
+	margin-left: 56px;
+    vertical-align: sub;
 }
 
 nav ul li a {
 	display: block;
 	color: #b1bcc0;
 	text-decoration: none;
-    padding-right: 12px;
+    padding-right: 10px;
     padding-left: 12px;
 }
 
@@ -190,14 +195,14 @@ nav ul li a {
  	font-family: arial;
  	font-size: 12px;
  	color: #0d5a8f;
- 	margin-left: 5px;
+ 	margin-left: 6px;
  }
 
  .item_digit {
  	margin-left: 10px;
  }
  .item_box {
- 	margin-left: 10px;
+ 	margin-left: 4px;
  }
 
  nav ul li a:hover {
@@ -316,7 +321,7 @@ aside {
     margin-left: 33px;
     margin-top: 7px;
     font-size: 13px;
-    color: #114165;
+    
 }
 
 .marker1 ul li img {
@@ -324,12 +329,16 @@ aside {
 } 
 
 .marker1 ul li {
-	margin-bottom: 13px;
+	margin-bottom: 11px;
 }
 .marker1 ul li a {
 	text-decoration: none;
+	color: #114165;
+	height: 15px;
+    display: inline-block;
 } 
 .marker1 ul li a:hover {
+	
 	font-family: arial;
 	font-style: italic;
 	font-weight: bold;
@@ -347,16 +356,16 @@ aside {
 
 .form1 {
 	clear: both;
-	margin-left: 25px;
-    margin-top: 4px;
+    margin-left: 28px;
+    margin-top: 9px;
     font-family: 'lucida';
     font-size: 12.73px;
     color: #114165;
 }
 .form2 {
 	clear: both;
-	margin-left: 25px;
-    margin-top: 8px;
+    margin-left: 28px;
+    margin-top: 10px;
     font-family: 'lucida';
     font-size: 12.73px;
     color: #114165;
@@ -414,8 +423,7 @@ label {
     box-shadow: 2px 3px 6px -3px rgba(10,16,48,1);
     height: 26px;
     width: 80px;
-    margin-top: 11px;
-    margin-left: 6px;
+    margin-top: 12px;
     color: white;
     font-family: arial;
     font-size: 11px;
@@ -430,9 +438,7 @@ label {
 
 main {
 	width: 525px;
-	margin: 0 190px 190px;
-	padding-bottom: 20000px;
-    margin-bottom: -20000px;
+	margin: 0 190px;
     background: linear-gradient(to bottom, rgba(228,231,232,1) 0%,rgba(147,167,176,1) 100%);
 }
 
@@ -444,10 +450,10 @@ main {
 
 .picscat {
 	float: left;
-    margin-left: 17px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-right: 9px;
+    margin-left: 18px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .scat_name,
@@ -480,20 +486,32 @@ main {
 
 .scat_surname {
 	font-size: 14px;
+	letter-spacing: -1px;
 }
 
 .scat_price {
 	color: #206988;
-	font-family: arial;
-	font-style: italic;
-	font-weight: bold;
-	font-size: 17.55px
+    font-family: arial;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 17.55px;
+    text-align: center;
+    margin-top: 3px;
+    margin-left: 13px;
+}
+
+.grn {
+	color: #206988;
+    font-family: arial;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13.16px;
 }
 
 /*footer*/
 
 .logo_link {
-	margin: 35px auto 0px;
+	margin: 62px auto 0px;
 	max-width: 700px;
 
 }
@@ -502,6 +520,7 @@ main {
 	display: inline-block;
 	height: 50px;
 	margin: 0px 5px 0px 5px;
+	vertical-align: middle;
 }
 
 .logo_link a img { 
@@ -517,7 +536,7 @@ main {
 .main_footer {
 	width: 910px;
     height: 100px;
-    margin: -10px auto;
+    margin: 0 auto;
     background: #213a4d;
 }
 
