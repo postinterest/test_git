@@ -32,13 +32,16 @@ body {
 }
 
 /*верхняя навигация*/
+.mainnavi {
+	max-height: 60px;
+	height: 50px;
+}
 .circle {
 	float: left;
 	width: 20px;
 	height: 20px;
-	background: linear-gradient(to bottom, rgba(12,51,87,1) 0%,rgba(31,103,134,1) 100%);
-	border-radius: 10px;
 	}
+
 .topmenu {
 	float: left;
 	margin-top: 27px;
@@ -47,18 +50,19 @@ body {
 
 .topmenu span {
 	font-family: arial;
-	font-size: 19px;
+	font-size: 18.9px;
 	color: #5e696d;
 }
-
+/*менюшка с тремя иконками*/
 .navi {
 	float: right;
-    width: 70px;
+    width: 73px;
     height: 20px;
     border: 1px solid #c1c8cb;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-top: 22px;
-    margin-right: 11px;
+    margin-right: 9px;
+    box-shadow: 2px 3px 6px -3px rgba(10,16,48,1);
 }
 
 .navi_pic {
@@ -66,6 +70,11 @@ body {
 	padding-top: 2px;
 }
 
+.navi_pic img {
+	margin-right: 4px;
+}
+
+/*окно авторизации*/
 .avtoriz {
 	float: left;
     margin-top: 22px;
@@ -76,10 +85,10 @@ body {
     border: 1px solid transparent;
     border-radius: 4px;
     font-size: 12px;
+    box-shadow: 2px 3px 6px -3px rgba(10,16,48,1);
 }
 .img_man{
-	padding-top: 5px;
-	padding-left: 6px;
+	padding-left: 5px;
 }
 
 .form_input{
@@ -91,49 +100,41 @@ body {
 	color: white;
 	text-decoration: none;
 	font-family: 'lucida';
+	line-height: 24px;
+	font-size: 12px;
 }
-
+.white_link {
+	margin-left: -5px;
+}
 .gray_link {
 	color: #bfbfbf;
 	font-family: 'lucida';
-}
-.mainnavi {
-	max-height: 54px;
-	height: 40px;
+	font-size: 12px;
+	line-height: 24px;
+	margin-left: 7px;
 }
 
-.mainnavi a {
-	display: inline-block;
-	margin-left: 11px;
-}
-.mainnavi span {
+.avtoriz span {
  	display: inline-block;
  }
-  .mainnavi form {
+.avtoriz form {
   	display: inline-block;
-  }
-  .mainnavi input {
-  	display: inline-block;
-  }
-  .mainnavi img {
-  	display: inline-block
-  }
+}
+ 
 form {
-	width: 259px;
+	width: 284px;
 }
 
 #user {
-	height: 11px;
-	width: 109px
+	height: 10px;
+	width: 107px
 }
 #user_1 {
-	height: 11px;
-	width: 108px;
+	height: 10px;
+	width: 107px;
 	margin-left: 6px;
 }
 .login-form-submit {
-    height: 13px;
-    width: 20px;
     border: none;
     background: none;
     color: #ffffff;
@@ -141,8 +142,9 @@ form {
     font-family: 'lucida';
     text-align: center;
     }
+ /*главная картинка*/   
 .mainlogo {
-	margin-top: 19px;
+	margin-top: 8px;
 }
 /*конец верхней навигации*/
  
@@ -154,11 +156,13 @@ nav {
 	border-radius: 5px;
 	box-shadow: 3px 5px 8px -3px rgba(10,16,48,1);
 	margin-top: 3px;
+	margin-left: -2px;
 }
 nav ul {
 	line-height: 32px;
-	margin-left: 144px;
-	font-size: 15px;
+	margin-left: 133px;
+	font-family: 'lucida';
+	font-size: 13.9px;
 }
 
 nav ul li {
@@ -166,20 +170,40 @@ nav ul li {
 }
 
 nav ul li img {
-	margin-left: 20px;
+	margin-left: 45px;
 }
+
 nav ul li a {
 	display: block;
 	color: #b1bcc0;
 	text-decoration: none;
-	padding-right: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
 }
 
  .letters {
+ 	font-family: arial;
+ 	font-size: 11px;
  	color: #929b9f;
  }
  .digits {
+ 	font-family: arial;
+ 	font-size: 12px;
  	color: #0d5a8f;
+ 	margin-left: 5px;
+ }
+
+ .item_digit {
+ 	margin-left: 10px;
+ }
+ .item_box {
+ 	margin-left: 10px;
+ }
+
+ nav ul li a:hover {
+ 	background: linear-gradient(to bottom, rgba(31,103,135,1) 0%,rgba(22,78,112,1) 40%,rgba(13,52,88,1) 100%);
+	border-radius: 12px;
+ 	line-height: 26px;
  }
  /*блок с множеством инпутов*/
 .searchavto {
@@ -224,16 +248,19 @@ nav ul li a {
 .avto_form {
 	margin-left: 20px;
 }
-/*боковая колонка*/
+/*боковая колонка слева*/
 aside {
 	width: 195px;
 	float: left;
 	padding-bottom: 20000px;
     margin-bottom: -20000px;
+    font-family: 'lucida';
 }
 
 .catalog {
-	font-size: 14px;
+	font-size: 12px;
+	line-height: 27px;
+	color: #114165;
 }
 
 .catalog1 {
@@ -241,31 +268,76 @@ aside {
     border-radius: 13px;
     width: 180px;
     height: 25px;
-    font-size: 14px;
-    font-family: arial;
-}
+    box-shadow: 2px 3px 6px -3px rgba(10,16,48,1);
+   }
+
 .listimg {
 	float: left;
-	width: 17px;
-	height: 18px;
-	background: linear-gradient(to bottom, rgba(12,51,87,1) 0%,rgba(31,103,134,1) 100%);
-	border-radius: 10px;
-	padding-left: 5px;
-    padding-top: 3px;
+    padding-left: 2px;
+    padding-top: 2px;
+    margin-right: 4px;
 }
 .scat {
 	clear: both;
-	border: 1px solid #8b979c;
-	border-radius: 10px;
-
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+    margin-top: 14px;
+    height: 26px;
+    width: 149px;
 }
+
 .scatpic {
 	float: left;
+    margin-left: 2px;
+    margin-top: 1px;
+    margin-right: 4px;
+}
+
+.scat_disc,
+.scat_bolt {
+		
+	border: 1px solid #8b979c;
+    border-radius: 15px;
+    margin-top: -11px;
+    height: 26px;
+    width: 149px;
+}
+
+.scattext {
+
+	line-height: 27px;
+	font-family: 'lucida';
+	font-size: 15.4px;
+	color: #114165;
 }
 
 .marker1 {
 	clear: both;
+    margin-left: 33px;
+    margin-top: 7px;
+    font-size: 13px;
+    color: #114165;
 }
+
+.marker1 ul li img {
+	margin-right: 3px;
+} 
+
+.marker1 ul li {
+	margin-bottom: 13px;
+}
+.marker1 ul li a {
+	text-decoration: none;
+} 
+.marker1 ul li a:hover {
+	font-family: arial;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 15.4px;
+	text-decoration: underline;
+
+}
+/*правая*/
 .sidebar {
 	width: 195px;
 	float: right;
@@ -275,7 +347,80 @@ aside {
 
 .form1 {
 	clear: both;
+	margin-left: 25px;
+    margin-top: 4px;
+    font-family: 'lucida';
+    font-size: 12.73px;
+    color: #114165;
 }
+.form2 {
+	clear: both;
+	margin-left: 25px;
+    margin-top: 8px;
+    font-family: 'lucida';
+    font-size: 12.73px;
+    color: #114165;
+}
+
+#check_me {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+}
+
+.catalog12 {
+	border: 1px solid #8b979c;
+    border-radius: 13px;
+    width: 180px;
+    height: 25px;
+    box-shadow: 2px 3px 6px -3px rgba(10,16,48,1);
+    margin-left: 5px;
+}
+
+.scat1 {
+	clear: both;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+    margin-top: 14px;
+    height: 26px;
+    width: 135px;
+    margin-left: 18px;
+}
+
+.scat1 > .scatpic {
+	margin-left: 4px;
+}
+
+.scat2 {
+	clear: both;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+    margin-top: 14px;
+    height: 26px;
+    width: 135px;
+    margin-left: 18px;
+}
+
+label {
+	display: block;
+	margin-top: 6px;
+    margin-bottom: 9px;
+}
+
+.button_ok {
+	background: linear-gradient(to bottom, rgba(31,103,135,1) 0%,rgba(12,51,87,1) 100%);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    box-shadow: 2px 3px 6px -3px rgba(10,16,48,1);
+    height: 26px;
+    width: 80px;
+    margin-top: 11px;
+    margin-left: 6px;
+    color: white;
+    font-family: arial;
+    font-size: 11px;
+}
+
 /*основной блок*/
 .mainblock {
 	width: 915px;
@@ -285,7 +430,7 @@ aside {
 
 main {
 	width: 525px;
-	margin: 0 auto;
+	margin: 0 190px 190px;
 	padding-bottom: 20000px;
     margin-bottom: -20000px;
     background: linear-gradient(to bottom, rgba(228,231,232,1) 0%,rgba(147,167,176,1) 100%);
@@ -298,7 +443,11 @@ main {
 }
 
 .picscat {
-	 float: left;
+	float: left;
+    margin-left: 17px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 9px;
 }
 
 .scat_name,
@@ -319,21 +468,92 @@ main {
 	padding-top: 5px;
 }
 
-.picscat {
-	margin-left: 27px;
-	margin-top: 15px;
-	margin-bottom: 10px;
+.scat_name,
+.scat_surname {
+	font-family: 'lucida';
+}
+
+.scat_name {
+	color: #206988;
+	font-size: 16px;
+}
+
+.scat_surname {
+	font-size: 14px;
+}
+
+.scat_price {
+	color: #206988;
+	font-family: arial;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 17.55px
 }
 
 /*footer*/
-.brand_footer_logo {
-	display: inline-block;
-	margin: 20px auto;
-	
+
+.logo_link {
+	margin: 35px auto 0px;
+	max-width: 700px;
+
 }
 
+.logo_link a {
+	display: inline-block;
+	height: 50px;
+	margin: 0px 5px 0px 5px;
+}
+
+.logo_link a img { 
+	text-align: center;
+}
 .footer_link {
 	display: inline-block;
 	margin: 20px auto;
+}
 
+/*самый последний футер*/
+
+.main_footer {
+	width: 910px;
+    height: 100px;
+    margin: -10px auto;
+    background: #213a4d;
+}
+
+.footerlink {
+	height: 41px;
+    width: 315px;
+    margin: 0 auto;
+    color: #bec6c9;
+}
+
+.footerlink a {
+	display: inline-block;
+	color: #bec6c9;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 13.2px;
+	line-height: 0px;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+.footerlink a:hover {
+	color: #52abcb;
+}
+
+.global {
+    width: 160px;
+    margin: 0 auto;
+    color: #7f4740;
+    font-family: arial;
+    font-size: 10px;
+}
+
+.global a {
+	color: #7f4740;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 10px;
 }
