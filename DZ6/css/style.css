@@ -16,7 +16,7 @@ body {
 
 .container {
 	width: 910px;
-	max-height: 1310px;
+	
 	max-width: 910px;
 	margin: 0 auto;
 }
@@ -530,8 +530,12 @@ main {
 
 /*footer*/
 
+footer {
+	margin: 40px auto 0px;
+}
+
 .logo_link {
-	margin: 62px auto 0px;
+	margin: 0 auto;
 	max-width: 700px;
 
 }
