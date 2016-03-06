@@ -133,16 +133,16 @@
 
 .navigation_slider_menu li a {
 	display: inline-block;
-	height: 15px;
-	width: 15px;
+	height: 11px;
+	width: 11px;
 	background: #393740 0 0 no-repeat;
-	border: 1px solid #393740;
+	border: 4px solid #393740;
 	border-radius: 10px
 }
 
 .navigation_slider_menu li a:hover {
 	
-	background-image: url(../img/navigation.png);
+	background: white;
 }
 /*blurbs*/
 
@@ -151,3 +151,48 @@
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
+
+.blurbs__width {
+	width: 23%;
+	display: inline-block;
+	position: relative;
+	color: white;
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.blurbs__column__head {
+	font-family: 'leaguegothic';
+	font-size: 30px;
+}
+
+.blurbs__column__text {
+	font-family: 'open_sanslight';
+	font-size: 16px;
+	margin-top: 9px;
+    line-height: 1.5;
+}
+
+.blurbs__column__read {
+	font-family: 'leaguegothic';
+	font-size: 18px;
+    float: right;
+    margin-top: -5px;
+    margin-bottom: 18px;
+}
+
+.blurbs__column_1, .blurbs__column_2
+{
+  margin: 74px 20px 50px 64px;
+ } 
+.blurbs__column_2 {
+	margin-left: 95px;
+}
+.blurbs__column_3 {
+     margin-left: 90px;
+ }
+
+ .blurbs__column__img {
+ 	position: absolute;
+ 	top: 9px;
+    left: -51px;
+ }
