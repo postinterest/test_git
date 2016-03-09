@@ -22,6 +22,17 @@
 
 }
 
+@font-face {
+	font-family: 'open_sans_extrabold';
+	src: url('../fonts/OpenSans-ExtraBold.eot') format('eot'),
+		 url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+		 url('../fonts/OpenSans-ExtraBold.ttf') format('truetype'),
+		 url('../fonts/OpenSans-ExtraBold.svg#OpenSans-Extrabold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 .topblock {
 	background: url(../img/topback.jpg) center center no-repeat;
     background-size: cover;
@@ -209,7 +220,7 @@
 
  /*block with updates*/
  .update_block {
- 	background: #f9f9f9;
+ 	background: #eae5e5;
 }
 
 .update_block__main__starts {
@@ -221,7 +232,7 @@
     padding-left: 35px;
     padding-right: 6px;
     padding-bottom: 20px;
-    border: 1px solid blue;
+    
 }
 
 .update_block__main__starts__text {
@@ -242,12 +253,13 @@
 	color: #454545;
 	margin-top: 10px;
     line-height: 1.5;
+    padding-bottom: 16px;
 }
 
 .update_block__main__starts__img {
 	position: absolute;
     top: -10px;
-    left: -63px;
+    left: -27px;
 }
 
 .update_block__main__starts:after {
@@ -255,16 +267,18 @@
     position: absolute;
     height: 0;
     width: 0;
-    border-left: 3px solid transparent;
-    border-right: 3px solid transparent;
-    border-top: 7px solid white;
-    top: 14px;
-    margin-left: 8px;
+    border-left: 22px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 20px solid white;
+    top: 244px;
+    left: 365px;
 }
 
 .left_menu {
 	float: left;
-
+    margin-top: 25px;
+    margin-left: 200px;
+    margin-bottom: 72px;
 }
 
 .left_menu li a {
@@ -275,4 +289,175 @@
 
 .left_menu li a:hover {
 		background: #393740;
+}
+
+.update_block__main__recent {
+	float: right;
+	width: 40%;
+	position: relative;
+}
+
+.margin_block {
+	    margin-left: -66px;
+}
+
+.update_block__main_rmh {
+	margin-top: 24px;
+    margin-right: 21px;
+    color: #454545;
+}
+
+.update_block__main_bodyhead {
+	font-family: 'open_sans_extrabold';
+	}
+
+.update_block__main__blockimg {
+	position: relative;
+	margin-top: 21px;
+}	
+
+.update_block__main__recent .update_block__main_bodytext {
+	margin-top: 4px;
+}
+.update_block__main__blockimg img {
+	position: absolute;
+	left: -65px;
+    top: -4px;
+}
+
+.update_block__trust {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.update_block__trust ul {
+	margin: 24px 0 27px 94px;
+}
+
+.update_block__trust li {
+	display: inline-block;
+	margin-right: 60px;
+}
+
+.update_block__trust li a {
+	display: block;
+	width: 70px;
+	height: 65px;
+	background: url(../img/spritelogo.png) 0 0 no-repeat;
+}
+
+.update_block__trust .update_block__trust_link2 {
+	background-position: -73px 0;
+}
+
+.update_block__trust .update_block__trust_link3 {
+	background-position: -144px 0;
+}
+
+.update_block__trust .update_block__trust_link4 {
+	background-position: -212px 0;
+    width: 53px;
+    margin-left: 4px;
+}
+.update_block__trust .update_block__trust_link5 {
+	background-position: -265px 0;
+    width: 108px;
+    margin-left: 2px;
+}
+.update_block__trust .update_block__trust_link6 {
+	background-position: -374px 0;
+    width: 78px;
+}
+
+/*group down three blocks*/
+
+.group_down {
+	background: #ececec;
+	border-bottom: 1px solid #7b717e;
+}
+
+
+.group_down__txt {
+    margin: 80px 55px 70px 0;
+    width: 29%;
+}
+
+.txt__after {
+	margin-right: 0;
+	margin-top: 96px;
+}
+
+.txt__middle {
+	margin-top: 96px;
+}
+
+.group_down__txt_head {
+	color: #454545;
+}
+
+.group_down__txt_body {
+	color: #787878;
+	text-shadow: 0px 2px 1px rgba(255, 255, 255, 1);
+}
+
+.group_down__txt__copy {
+	font-family: georgia;
+	font-size: 16px;
+	font-style: italic;
+	color: #c5c5c5;
+	text-shadow: 0px 2px 1px rgba(255, 255, 255, 1);
+}
+
+.group_down__context {
+	font-size: 48px;
+	text-shadow: 0px 2px 1px rgba(255, 255, 255, 1);
+}
+
+.context_pingbull {
+	color: #454545;
+}
+
+.context_er {
+	color: #b9b9b9;
+}
+
+/*footer*/
+
+footer {
+	background: url(../img/footerbg.png) center center no-repeat;
+    background-size: cover;
+}
+
+.footer__menu__all {
+	margin-top: 45px;
+	margin-bottom: 50px;
+	float: left;
+}
+.footer_design {
+	float: right;
+	color: white;
+	font-size: 12px;
+	margin-top: 52px;
+}
+
+.footer_design_1 {
+	font-family: 'open_sanslight';
+	
+}
+
+.footer_design_2 {
+	font-family: 'open_sans_extrabold';
+	
+}
+
+.footer__menu {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.footer__menu a {
+	text-decoration: none;
+	font-family: 'leaguegothic';
+	font-size: 20px;
+	color: white;
 }
