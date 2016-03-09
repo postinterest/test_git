@@ -223,16 +223,18 @@
  	background: #eae5e5;
 }
 
+.update_block__main {
+	padding-top: 100px;
+}
 .update_block__main__starts {
 	width: 40%;
 	background: #ffffff;
 	position: relative;
-   	margin-top: 129px;
     margin-left: 27px;
     padding-left: 35px;
     padding-right: 6px;
     padding-bottom: 20px;
-    
+    padding-top: 30px;
 }
 
 .update_block__main__starts__text {
@@ -258,7 +260,7 @@
 
 .update_block__main__starts__img {
 	position: absolute;
-    top: -10px;
+    top: 18px;
     left: -27px;
 }
 
@@ -270,8 +272,8 @@
     border-left: 22px solid transparent;
     border-right: 5px solid transparent;
     border-top: 20px solid white;
-    top: 244px;
-    left: 365px;
+    bottom: -20px;
+    right: 30px;
 }
 
 .left_menu {
@@ -295,6 +297,7 @@
 	float: right;
 	width: 40%;
 	position: relative;
+	margin-top: 30px;
 }
 
 .margin_block {
