@@ -1,6 +1,9 @@
 .bodydiv {
-	background: gray;
 	padding: 5%;
+	background:  url('./img/1.jpg') no-repeat fixed center #10b3d1;
+	background-size: cover;
+	background-position: center;
+	
 }
 
 .mainblock {
@@ -32,3 +35,4 @@
   display: table;
   clear: both;
 }
+
