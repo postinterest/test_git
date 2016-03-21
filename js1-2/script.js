@@ -38,18 +38,19 @@ function nameStart(){
 var arr = [];
 
 for (var i = 0; i < 5; i++) {
-	
-arr.push(prompt('Задайте имя'));
+ arr.push(prompt('Задайте имя'));
+ }
 
-}
 console.log(arr);
+
 var yourName = prompt('Введите ваше имя');
 var mistake = 'Ошибка входа';
+
 for (var i = 0; i < arr.length; i++) {
 
-	if (yourName == arr[i]) {
+	if (yourName.toLowerCase() === arr[i].toLowerCase()) {
 		
-	mistake = (yourName + ', это заявка на успех!')	
+	mistake = yourName + ', это заявка на успех!';
 	}
  
 }
