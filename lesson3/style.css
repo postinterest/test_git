@@ -1,0 +1,11 @@
+.js-class {
+	color: red;
+}
+
+.box {
+	margin: 100px;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	padding-top: 30px;
+}
