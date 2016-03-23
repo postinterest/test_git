@@ -1,32 +1,24 @@
 var testBuilder = {
   title: "",
-  count: "", 
-  wrapper: '', //РѕР±СЂР°С‚РёС‚СЊ РІРЅРёРјР°РЅРёРµ
-
-  setCount: function() {
-    this.count = prompt("Р’РІРµРґРёС‚Рµ РєРѕР»-РІРѕ РІРѕРїСЂРѕСЃРѕРІ", 3);
-  },
-
-  getCount: function() {
-    return this.count;
-  },
-
+  count: prompt('Вееди кол-во вопросов', 3),
+  wrapper: '', //обратить внимание
   setTitle: function() {
-    this.title = prompt("Р’РІРµРґРё РЅР°Р·РІР°РЅРёРµ С‚РµСЃС‚Р°", "РўРµСЃС‚ РїРѕ РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЋ");
+    this.title = prompt("Введи название теста", "Тест по программированию");
   },
   getTitle: function() {
     return this.title;
   },
-  
   makeDiv: function() {
-    //СЃРѕР·РґР°РµРј РіР»Р°РІРЅС‹Р№ РґРёРІ wrapper
+    //создаем главный див wrapper
     this.wrapper = document.createElement('div');
     this.wrapper.classList.add('wrapper');
+
     document.body.appendChild(this.wrapper);
   },
 
   makeTitle: function() {
     var h1 = document.createElement('h1');
+    
     h1.innerHTML = this.getTitle();
     this.wrapper.appendChild(h1);
   },
@@ -34,10 +26,10 @@ var testBuilder = {
   makeMenu: function() {
     var ul;
     var count = this.count;
-    for (var i = 1; i <= count; i++) {
+    for (var i = 1; i < count; i++) {
       ul = document.createElement('ul');
       ul.classList.add('wrapper__ul');
-      ul.innerHTML = +i + '<span>. Р’РІРµРґРёС‚Рµ РІРѕРїСЂРѕСЃ в„– ' + i + '</span>';
+      ul.innerHTML = +i + '<span>. Введите вопрос № ' + i + '</span>';
 
       this.wrapper.appendChild(ul);
     }
@@ -65,7 +57,7 @@ var testBuilder = {
 
 //       label = document.createElement('label');
 //       label.appendChild(checkbox);
-//       label.appendChild(document.createTextNode("Р’Р°СЂРёР°РЅС‚ РѕС‚РІРµС‚Р° в„– " + (i + 1) + ""));
+//       label.appendChild(document.createTextNode("Вариант ответа № " + (i + 1) + ""));
 //       li[i].appendChild(label);
 //     }
     var ul, collectionOfLi;
@@ -76,17 +68,22 @@ var testBuilder = {
 
       collectionOfLi = ul[i].querySelectorAll('.wrapper__li');
       for(var k = 1; k<=collectionOfLi.length; k++){
-        collectionOfLi[k-1].innerHTML = '<label><input type="checkbox"> Р’Р°СЂРёР°РЅС‚ РѕС‚РІРµС‚Р° '+ k +'</input></label>';
+        collectionOfLi[k-1].innerHTML = '<span>'+ k +'</span>';
       }
     }
   },
 
   makeBottomButton: function() {
     var button, text;
+
+    //wrapper = document.querySelector('.wrapper');
     button = document.createElement('button');
+
     button.type = "button";
     button.classList.add('btn', 'btn-success');
-    text = 'РџСЂРѕРІРµСЂРёС‚СЊ РјРѕРё СЂРµР·СѓР»СЊС‚Р°С‚С‹';
+
+    text = 'Проверить мои результаты';
+
     button.appendChild(document.createTextNode(text));
     this.wrapper.appendChild(button);
   },
@@ -97,8 +94,6 @@ var testBuilder = {
   },
 
   makeMainFunc: function() {
-    testBuilder.setTitle();
-    testBuilder.setCount();
     testBuilder.makeDiv();
     testBuilder.makeTitle();
     testBuilder.makeMenu();
@@ -110,3 +105,4 @@ var testBuilder = {
 
 };
 
+testBuilder.setTitle();
