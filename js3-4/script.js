@@ -1,7 +1,7 @@
 var testBuilder = {
   title: "",
   count: "", 
-  wrapper: '', //обратить внимание
+  wrapper: '', 
 
   setCount: function() {
     this.count = prompt("Введите кол-во вопросов", 3);
@@ -19,7 +19,7 @@ var testBuilder = {
   },
   
   makeDiv: function() {
-    //создаем главный див wrapper
+   
     this.wrapper = document.createElement('div');
     this.wrapper.classList.add('wrapper');
     document.body.appendChild(this.wrapper);
@@ -57,17 +57,6 @@ var testBuilder = {
   },
 
   makeLabel: function() {
-//     var li, checkbox, label;
-//     for (var i = 0; i < 2; i++) {
-//       li = document.querySelectorAll('.wrapper__ul');
-//       checkbox = document.createElement('input');
-//       checkbox.type = "checkbox";
-
-//       label = document.createElement('label');
-//       label.appendChild(checkbox);
-//       label.appendChild(document.createTextNode("Вариант ответа № " + (i + 1) + ""));
-//       li[i].appendChild(label);
-//     }
     var ul, collectionOfLi;
     
     ul = document.querySelectorAll('.wrapper__ul');
