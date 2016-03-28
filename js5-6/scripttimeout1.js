@@ -44,9 +44,9 @@ var CounterBuilder = {
 
 	startFunc: function(){
 		var btn = document.querySelector('.pause_button');
-		btn.classList.remove('.pause_button');
-		var startbtn = document.querySelector('.startbtn');
-		startbtn.classList.add('.pause_button');
+		btn.classList.remove('pause_button');
+		var startbtn = document.querySelector('.startdiv');
+		startbtn.classList.add('pause_button');
 		if (this.timerId) { CounterBuilder.stopFunc();};
 		if (this.diff == 0) {
 			this.start = new Date().getTime();
@@ -67,8 +67,11 @@ var CounterBuilder = {
 		this.diff = 0;
 		var h1 = document.querySelector('.numbers');
 		h1.innerHTML = ('00:00:00');
-
-
+		var btn = document.querySelector('.startdiv');
+		btn.classList.remove('pause_button');
+		var pausediv = document.querySelector('.pausediv');
+		console.log(pausediv);
+		pausediv.classList.add('pause_button');
 	},
 
 };
@@ -78,10 +81,10 @@ CounterBuilder.getTime();
 CounterBuilder.presentNul();
 
 var startRun = document.querySelector('.startbtn');
-startRun.addEventListener('click', CounterBuilder.startFunc());
+startRun.addEventListener('click', function(){CounterBuilder.startFunc();});
 var stopRun = document.querySelector('.stopbtn');
-startRun.addEventListener('click', CounterBuilder.stopFunc());
+stopRun.addEventListener('click', function(){CounterBuilder.stopFunc();});
 var resetRun = document.querySelector('.resetbtn');
-startRun.addEventListener('click', CounterBuilder.clearFunc());
+resetRun.addEventListener('click', function(){CounterBuilder.clearFunc();});
 
 
