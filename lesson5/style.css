@@ -1,0 +1,16 @@
+.wrapper {
+  width: 50%;
+  margin: 10% auto;
+}
+.time {
+  width: 70%;
+  margin: 0 auto;
+} 
+
+.numbers {
+ text-align: center;
+}
+
+.pause_button {
+  display: none;
+}
