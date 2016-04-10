@@ -15,3 +15,6 @@
   display: none;
 }
 
+.btn-success {
+	min-width: 130px;
+}
