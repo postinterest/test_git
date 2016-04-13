@@ -121,9 +121,10 @@
 
 $(function () {
 
-var	$links = $('.menu a');
-$links.on('click', function (e) {
-	var $submenu = $(this).siblings('.submenu');
+var	$tabs = $('.tabs a');
+console.log($tabs);
+$tabs.on('click', function (e) {
+	var $submenu = $(this).siblings('.textclass');
 	e.preventDefault();
 	console.log('$submenu', $submenu);
 	$submenu.slideToggle();

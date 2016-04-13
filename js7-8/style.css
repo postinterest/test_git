@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #eba070;
+}
+
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	
+}
+
+.tabs {
+	padding: 50px 0px 0px 0px;
+}
+
+.tabs li {
+	list-style: none;
+	display: inline-block;
+	line-height: 25px;
+}
+
+.tabs a {
+	text-decoration: none;
+	display: block;
+	width: 60px;
+	height: 25px;
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	text-align: center;
+	background-color: silver;
+	
+}
+
+.textclass {
+	width: 50%;
+	border: 1px solid gray;
+	padding: 10px;
+	display: none;
+}
