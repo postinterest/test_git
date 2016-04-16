@@ -247,6 +247,14 @@
     left: 13px;
  }
 
+ .hide_img {
+ 	display: none;
+ }
+
+ .will_open {
+	
+ }
+
  /*block with updates*/
  .update_block {
  	background: #eae5e5;
@@ -514,6 +522,32 @@ img {
     width: 70%;
     margin-left: 44px;
 }
+
+	.will_open {
+	display: none;
+}
+
+	.hide_img {
+	display: block;
+}
+	.blurbs__width {
+    width: 26%;
+}    
+
+	.blurbs__column_1, .blurbs__column_2, .blurbs__column_3 {
+	padding: 75px 0px 75px 0px;
+}
+
+	.blurbs__column_2, .blurbs__column_3 {
+    margin-left: 55px; 
+}
+	.update_block__trust ul {
+    margin: 24px 0 27px 33px;
+}
+
+	.update_block__trust li {
+    margin-right: 45px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -528,10 +562,114 @@ img {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 480px) {
-	
+	.will_open {
+	display: none;
 }
 
+	.hide_img {
+	display: block;
+}
+
+	.blurbs__width {
+    width: 26%;
+}    
+
+	.blurbs__column_1, .blurbs__column_2, .blurbs__column_3 {
+	padding: 75px 0px 75px 0px;
+}
+
+	.blurbs__column_2, .blurbs__column_3 {
+    margin-left: 55px; 
+}
+	.update_block__trust ul {
+    margin: 24px 0 27px 13px;
+}
+
+	.update_block__trust li {
+    margin-right: 25px;
+}
+
+}
+@media screen and (max-width: 480px) {
+	.will_open {
+	display: none;
+}
+
+	.hide_img {
+	display: block;
+}
+
+	.blurbs__width {
+    width: 100%;
+}    
+
+	.blurbs__column_1, .blurbs__column_2, .blurbs__column_3 {
+    padding: 40px 30px 10px 65px;
+}
+
+	.blurbs__column_2, .blurbs__column_3 {
+    margin-left: 0px; 
+}
+
+	.blurbs__width__main {
+    padding-left: 4px;
+}
+
+	.blurbs__column__img {
+    position: absolute;
+    top: 53px;
+    left: 15px;
+}
+
+.update_block__main__starts {
+    width: 85%;
+    background: #ffffff;
+    position: relative;
+    margin-left: 47px;
+    padding-left: 35px;
+    padding-right: 1px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.update_block__main__recent {
+    float: none;
+    width: 75%;
+    position: relative;
+    margin: 30px 0px 20px 90px;
+}
+
+.update_block_menu_navi {
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+.update_block__trust li {
+    margin-right: 55px;
+    margin-bottom: 30px;
+}
+
+.update_block__trust ul {
+    margin: 30px 10px 10px 43px;
+}
+
+.footer__menu {
+     margin-right: 20px;
+}
+
+.footer__menu__all ul {
+	margin-left: 20px;
+}
+
+.footer__menu__all {
+	float: right;
+}
+
+.footer_design {
+	float: left;
+}
+
+}
 @media screen and (max-width: 320px) {
 	
 }

@@ -4,6 +4,28 @@
 	box-sizing: border-box;
 }
 
+.wrapper {
+	border: 1px solid black;
+	padding: 10px;
+	width: 450px;
+	margin: 0 auto;
+
+	background: #7abcff; 
+	background: -moz-linear-gradient(top,  #7abcff 0%, #60abf8 44%, #4096ee 100%);a
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 );
+}
 .input_me {
 	padding: 5px;
+}
+
+.input_block {
+	margin-left:10px;
+}
+
+.span_block{
+	margin-right: 2px;
+}
+
+.span_block_2 {
+	margin-right: 20px;
 }
